@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		BE3BF55724F57C8F004D2DA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3BF55624F57C8F004D2DA3 /* AppDelegate.swift */; };
 		BE3BF55924F57C8F004D2DA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3BF55824F57C8F004D2DA3 /* SceneDelegate.swift */; };
-		BE3BF55B24F57C8F004D2DA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3BF55A24F57C8F004D2DA3 /* ViewController.swift */; };
+		BE3BF55B24F57C8F004D2DA3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3BF55A24F57C8F004D2DA3 /* MainViewController.swift */; };
 		BE3BF55E24F57C8F004D2DA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3BF55C24F57C8F004D2DA3 /* Main.storyboard */; };
 		BE3BF56024F57C94004D2DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3BF55F24F57C94004D2DA3 /* Assets.xcassets */; };
 		BE3BF56324F57C94004D2DA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3BF56124F57C94004D2DA3 /* LaunchScreen.storyboard */; };
+		BE3BF56C24F57E1F004D2DA3 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3BF56B24F57E1F004D2DA3 /* SplashView.swift */; };
+		BE3BF56E24F584E1004D2DA3 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3BF56D24F584E1004D2DA3 /* SplashPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE3BF55324F57C8F004D2DA3 /* MVP Splach Screen APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP Splach Screen APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3BF55624F57C8F004D2DA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE3BF55824F57C8F004D2DA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BE3BF55A24F57C8F004D2DA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE3BF55A24F57C8F004D2DA3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BE3BF55D24F57C8F004D2DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE3BF55F24F57C94004D2DA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE3BF56224F57C94004D2DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE3BF56424F57C94004D2DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE3BF56B24F57E1F004D2DA3 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		BE3BF56D24F584E1004D2DA3 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,23 @@
 			children = (
 				BE3BF55624F57C8F004D2DA3 /* AppDelegate.swift */,
 				BE3BF55824F57C8F004D2DA3 /* SceneDelegate.swift */,
-				BE3BF55A24F57C8F004D2DA3 /* ViewController.swift */,
+				BE3BF55A24F57C8F004D2DA3 /* MainViewController.swift */,
+				BE3BF56A24F57DF2004D2DA3 /* Splash Screen */,
 				BE3BF55C24F57C8F004D2DA3 /* Main.storyboard */,
 				BE3BF55F24F57C94004D2DA3 /* Assets.xcassets */,
 				BE3BF56124F57C94004D2DA3 /* LaunchScreen.storyboard */,
 				BE3BF56424F57C94004D2DA3 /* Info.plist */,
 			);
 			path = "MVP Splach Screen APP";
+			sourceTree = "<group>";
+		};
+		BE3BF56A24F57DF2004D2DA3 /* Splash Screen */ = {
+			isa = PBXGroup;
+			children = (
+				BE3BF56B24F57E1F004D2DA3 /* SplashView.swift */,
+				BE3BF56D24F584E1004D2DA3 /* SplashPresenter.swift */,
+			);
+			path = "Splash Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE3BF55B24F57C8F004D2DA3 /* ViewController.swift in Sources */,
+				BE3BF55B24F57C8F004D2DA3 /* MainViewController.swift in Sources */,
+				BE3BF56E24F584E1004D2DA3 /* SplashPresenter.swift in Sources */,
+				BE3BF56C24F57E1F004D2DA3 /* SplashView.swift in Sources */,
 				BE3BF55724F57C8F004D2DA3 /* AppDelegate.swift in Sources */,
 				BE3BF55924F57C8F004D2DA3 /* SceneDelegate.swift in Sources */,
 			);
